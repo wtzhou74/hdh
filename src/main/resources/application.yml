@@ -1,0 +1,57 @@
+server:
+   port: 8081
+   
+# spring:
+   # datasource:
+      # driverClassName: org.postgresql.Driver
+      # url: jdbc:postgresql://localhost:5432/dvdrental
+      # username: postgres
+      # password: postgres
+      # maxActive: 10
+      # maxIdle: 5
+      # minIdle: 2
+      # initialsize: 5
+spring:
+   datasource:
+      driverClassName: org.postgresql.Driver
+      url: jdbc:postgresql://172.29.0.1:5432/mirthresults
+      username: mirthresults
+      password: mirthresults
+      maxActive: 10
+      maxIdle: 5
+      minIdle: 2
+      initialsize: 5
+      
+   jpa:
+      properties:
+         hibernate:
+            # The SQL dialect makes Hibernate generate better SQL for the chosen database
+            dialect: org.hibernate.dialect.PostgreSQLDialect
+            ddl-auto: update # Hibernate ddl auto (create, create-drop, validate, update)
+            temp:
+               use_jdbc_metadata_defaults: false # it will accelerate db connection
+            jdbc:
+               lob:
+                  non_contextual_creation: true
+            # format_sql: true
+      # show-sql: true
+      
+   mvc:
+      view:
+         prefix: /
+         suffix: .jsp
+
+hdh:
+   host: https://hctest.prod.hdh.nextgenaws.net
+   baseUrl: /health-data-hub/api
+   apiVersion: /v1
+   endpoint:
+      patients: /patients
+      procedures: /procedures
+      vitalSigns: /vital-signs
+      dataSource: /data-sources
+      immunizations: /immunizations
+         
+logging:
+   level:
+      org.springframework.security: TRACE

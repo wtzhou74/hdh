@@ -1,0 +1,111 @@
+# CUSTOM .GITIGNORE FILE BASED ON github/gitignore TEMPLATES
+
+# Original .gitignore templates obtained from: https://github.com/github/gitignore
+# This custom .gitignore file has been modified from the original .gitignore templates.
+
+# Original .gitignore templates licensed under the MIT license:
+
+# 		Copyright (c) 2015 GitHub, Inc.
+
+# 		Permission is hereby granted,  free of charge,  to any person obtaining a
+# 		copy of this software and associated documentation files (the "Software"),
+# 		to deal in the Software without restriction, including without limitation
+# 		the rights to  use, copy, modify, merge, publish, distribute, sublicense,
+# 		and/or sell copies of the Software, and to permit persons to whom the
+# 		Software is furnished to do so, subject to the following conditions:
+
+# 		The above copyright notice and this permission notice shall be included in
+# 		all copies or substantial portions of the Software.
+
+# 		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# 		IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# 		FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# 		AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# 		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# 		FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+# 		DEALINGS IN THE SOFTWARE.
+# Java #
+##################################
+
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+
+# Maven #
+##################################
+
+target
+
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
+!maven-wrapper.jar
+
+#Knowledge base file (RDF/XML, Turtle, CSV, N-Triples)#
+*.ttl
+*.owl
+*.rdf
+*.nt
+
+# Eclipse #
+##################################
+
+*.pydevproject
+.metadata
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings
+.loadpath
+
+# Eclipse Core
+.project
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# csv / excel
+.csv
+.xlsx

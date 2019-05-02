@@ -18,7 +18,7 @@ public final class ConstantUtil {
 	public static final Integer HL7_V2_MESSAGE_KEY = 2;
 	
 	// HDH
-	public static final String USERNAME = "wentao.zhou";
-	public static final String PASSWORD = "1986H_dh0311";
+	public static final String USERNAME = "USERNAME";
+	public static final String PASSWORD = "PASSWORD";
 	
 }

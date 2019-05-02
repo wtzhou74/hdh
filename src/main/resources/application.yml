@@ -11,16 +11,16 @@ server:
       # maxIdle: 5
       # minIdle: 2
       # initialsize: 5
-spring:
-   datasource:
-      driverClassName: org.postgresql.Driver
-      url: jdbc:postgresql://172.29.0.1:5432/mirthresults
-      username: mirthresults
-      password: mirthresults
-      maxActive: 10
-      maxIdle: 5
-      minIdle: 2
-      initialsize: 5
+# spring:
+   # datasource:
+      # driverClassName: org.postgresql.Driver
+      # url: POSTGRESQL URL
+      # username: USERNAME
+      # password: PASSWORD
+      # maxActive: 10
+      # maxIdle: 5
+      # minIdle: 2
+      # initialsize: 5
       
    jpa:
       properties:
@@ -42,7 +42,8 @@ spring:
          suffix: .jsp
 
 hdh:
-   host: https://hctest.prod.hdh.nextgenaws.net
+   # REPLACE HOST WITH REAL ONE
+   host: HOST
    baseUrl: /health-data-hub/api
    apiVersion: /v1
    endpoint:
